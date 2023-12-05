@@ -40,7 +40,8 @@ M: range v+n [ [ length>> ] [ step>> ] [ from>> ] tri ] dip + -rot \ range boa ;
   first3 swapd + nip '[ from>> _ max ] [ from>> ] [ length>> + ] tri 1 - 1 <range> ;
 
 : map-range ( ranges map -- ranges )
-  '[ [ _ [ [ right ] [ centre , ] [ left , ] 2tri ] each , ] f make harvest ] map concat members sort ;
+  '[ [ _ [ [ right ] [ centre , ] [ left , ] 2tri ] each , ] f make harvest ]
+  map concat members sort ;
 
 : part2 ( str -- res )
   parse first2 [ seed-ranges sort ] dip [ map-range ] each [ from>> ] map minimum ;
