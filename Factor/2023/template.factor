@@ -10,7 +10,8 @@ IN: dayX
 
 MAIN: [
   $[ current-source-file get path>> parent-directory [
-      current-vocab vocab-name "../../Inputs/2023/%s.txt" sprintf utf8 file-contents
+      current-vocab vocab-name "../../Inputs/2023/%s.txt" sprintf
+      utf8 file-contents
     ] with-directory ]
   [ "Part 1: " write part1 present print ]
   [ "Part 2: " write part2 present print ] bi
