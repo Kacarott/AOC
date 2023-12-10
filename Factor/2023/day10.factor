@@ -1,6 +1,8 @@
-USING: accessors formatting io io.directories io.encodings.utf8
-io.files io.pathnames kernel literals namespaces present
-source-files vocabs vocabs.parser pair-rocket grouping.extras sequences.extras ;
+USING: accessors arrays assocs formatting grouping.extras io
+io.directories io.encodings.utf8 io.files io.pathnames kernel
+literals math math.vectors namespaces pair-rocket present
+sequences sequences.extras sets source-files splitting vectors
+vocabs vocabs.parser ;
 IN: day10
 
 CONSTANT: UP    { -1 0 } CONSTANT: DOWN  { 1  0 }
@@ -34,11 +36,11 @@ CONSTANT: DIRS {
   chase length 2/ ;
 
 : part2 ( str -- res )
-  [ 0 0 rot chase dup rest swap [| s h a b | a b v-
+  0 0 rot chase [ dup rest swap [| s h a b | a b v-
     dup first 0 =
     [ last h * s + h ]
     [ first h + s swap ] if
-  ] 2each drop abs ] [ part1 1 - ] bi - ;
+  ] 2each drop abs ] [ length 2/ 1 - ] bi - ;
 
 
 MAIN: [
