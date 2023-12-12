@@ -1,6 +1,7 @@
-USING: accessors formatting io io.directories io.encodings.utf8
-io.files io.pathnames kernel literals namespaces present
-source-files vocabs vocabs.parser math.combinatorics ;
+USING: accessors arrays assocs formatting io io.directories
+io.encodings.utf8 io.files io.pathnames kernel literals make
+math math.combinatorics namespaces present ranges sequences sets
+source-files splitting vocabs vocabs.parser ;
 IN: day11
 
 : empties ( mat -- seq )
