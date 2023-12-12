@@ -2,7 +2,7 @@ USING: accessors assocs formatting io io.directories
 io.encodings.utf8 io.files io.pathnames kernel literals math
 math.parser math.quadratic namespaces present sequences sets
 source-files splitting vocabs vocabs.parser ;
-IN: day6
+IN: day06
 
 : parse ( str -- pairs )
   split-lines first2 swap

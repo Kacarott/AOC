@@ -3,7 +3,7 @@ io.directories io.encodings.utf8 io.files io.pathnames kernel
 literals math.order math.parser multiline namespaces peg.ebnf
 present sequences sequences.extras source-files vocabs
 vocabs.parser ;
-IN: day2
+IN: day02
 
 EBNF: parse [=[
   number = ([0-9])+ => [[ dec> ]]

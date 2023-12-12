@@ -3,7 +3,7 @@ grouping.extras io io.directories io.encodings.utf8 io.files
 io.pathnames kernel literals math math.parser namespaces present
 sequences sequences.extras sets sorting source-files splitting
 strings vocabs vocabs.parser ;
-IN: day3
+IN: day03
 
 : pad-grid ( grid -- grid )
   [ ".." 1surround ] map

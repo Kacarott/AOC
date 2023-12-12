@@ -2,7 +2,7 @@ USING: accessors arrays formatting generalizations io
 io.directories io.encodings.utf8 io.files io.pathnames kernel
 literals math namespaces present sequences sequences.extras sets
 source-files splitting vocabs vocabs.parser ;
-IN: day4
+IN: day04
 
 : count-wins ( str -- n )
   ":|" split reverse first2 

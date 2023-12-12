@@ -2,7 +2,7 @@ USING: accessors arrays ascii formatting io io.directories
 io.encodings.utf8 io.files io.pathnames kernel literals math
 math.parser math.text.english namespaces present ranges regexp
 sequences source-files splitting strings vocabs vocabs.parser ;
-IN: day1
+IN: day01
 
 : part1 ( str -- res )
   split-lines [

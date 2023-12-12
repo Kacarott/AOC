@@ -2,7 +2,7 @@ USING: accessors assocs circular formatting hashtables io
 io.directories io.encodings.utf8 io.files io.pathnames kernel
 literals math namespaces present sequences source-files
 splitting vocabs vocabs.parser ;
-IN: day8
+IN: day08
 
 : parse ( str -- ins )
   split-lines unclip swap rest [ " ()=," split harvest ] map

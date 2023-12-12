@@ -2,7 +2,7 @@ USING: accessors assocs formatting io io.directories
 io.encodings.utf8 io.files io.pathnames kernel literals math
 math.parser math.statistics namespaces present sequences sorting
 source-files splitting vocabs vocabs.parser ;
-IN: day7
+IN: day07
 
 : key ( hand -- key )
   dup [ 49 = ] partition histogram values inv-sort
