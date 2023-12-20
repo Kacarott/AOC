@@ -1,6 +1,9 @@
-USING: accessors formatting io io.directories io.encodings.utf8
-io.files io.pathnames kernel literals namespaces present
-source-files vocabs vocabs.parser sequences.extras pair-rocket ;
+USING: accessors arrays assocs combinators formatting
+generalizations io io.directories io.encodings.utf8 io.files
+io.pathnames kernel literals make math math.parser multiline
+namespaces pair-rocket peg.ebnf present quotations ranges
+sequences sequences.extras sets source-files strings vocabs
+vocabs.parser ;
 IN: day19
 
 EBNF: parse [=[
